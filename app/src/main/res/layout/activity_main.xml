@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="28dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:text="Media Bridge"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_box"
+            android:lineSpacingMultiplier="1.25"
+            android:padding="12dp"
+            android:text="Shows what's playing and lets your TakeMotions glasses app control it from the ring — play / pause / next / previous / volume."
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/mediaSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:paddingBottom="12dp"
+            android:text="Enable media bridge"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/accessText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:text="Notification access: not granted — tap below"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/grantAccessBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grant notification access" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp"
+            android:text="Now playing"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/nowPlayingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/info_box"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="12dp"
+            android:text="Bridge off"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:lineSpacingMultiplier="1.25"
+            android:paddingTop="12dp"
+            android:text="Playback is controlled from the glasses (ring), not here."
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingBottom="6dp"
+            android:text="Privacy"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.3"
+            android:text="Media Bridge only detects which media app is playing. Android requires &quot;Notification access&quot; to do that, but this app never reads, stores, or sends your notifications or messages — the notification listener it registers does nothing. Nothing leaves your phone: the info is served only to 127.0.0.1 (loopback) on your own device."
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/appSettingsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="App info / revoke access" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:paddingTop="28dp"
+            android:text="TakeMotions · @r_tkbyc"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
